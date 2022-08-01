@@ -8,8 +8,8 @@ else
     # On ssh-add toutes les clefs contenus dans ce dossier
     for f in /app/ssh/; do
         # ssh-agent add key
-        echo "Found ssh key. Added with ssh-agent: $f"
         ssh-add "$f"
+        echo "Found ssh key. Added with ssh-agent: $f"
     done
 fi
 
@@ -19,8 +19,8 @@ then
 else
     for f in /app/scripts/*.sh; do
         # On rend exécutable les fichiers trouvés
+        chmod a+x "$f"
         echo "Found script file: $f"
-        ssh-add "$f"
     done
 fi
 
