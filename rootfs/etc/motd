@@ -1,0 +1,9 @@
+Project: https://github.com/waaman/alpine-rdiff-backup
+Licence: https://github.com/waaman/alpine-rdiff-backup/blob/main/LICENSE
+
+Application is stored on /app
+
+Folder's structure:
+- app/ssh/ - contains your ssh private keys 
+- app/scripts/ - contains your executable files
+- app/periodic/ - symbolic link for periodic folders
